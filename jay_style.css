@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+
+/* HTML and Body Styles */
+html{
+    background-color: #3333FF;
+}
+
+body{
+margin: 0 auto;
+padding: 12;
+max-width: 1020px;
+min-width: 640px;
+color: #fffdf4;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    height:250px;
+    width:250px;
+}
+a{
+    color:#080808; 
+}
+a:hover{
+    color: #a76bcf;
+}
+
+/*Div Rules*/
+div[class^="col-"]
+{
+    float: left;
+}
+
+div.row{
+    clear: both;
+    text-align: center;
+}
+
+div.row::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+div.col-1-1 {width: 100%}
+div.col-1-2 {width: 50%}
+
+div{
+    outline: 1px solid white;
+}
+
+.box {
+    position: fixed;
+    top: 0;
+    transform: rotate(80deg); 
+    left: 0;
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+  }
+  .wave {
+    position: absolute;
+    opacity: .1;
+    width: 1300px;
+    height: 1500px;
+    margin-right: -800px;
+    margin-top: -200px;
+    border-radius: 43%;
+  }
+
+  .wave.-one {
+    animation: rotate 7000ms infinite linear;
+    opacity: .4;
+    background: #0af;
+  }
+  
+  .wave.-two {
+    animation: rotate 3000ms infinite linear;
+    opacity: .1;
+    background: black;
+  }
+  
+  .wave.-three {
+    animation: rotate 7500ms infinite linear;
+    background-color: #77daff;
+  }
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+/*Platform Rules*/
+@media only screen and (max-width: 480px) {
+
+    body {
+        width: 90%;
+        max-width: 1024px;
+        margin: 0px auto;
+    }
+ }
+ 
+ /* ===============================
+    Tablet Devices: 481px to 768px 
+    ===============================
+ */
+ 
+ @media only screen and (min-width: 481px) {
+ 
+    body {
+        width: 90%;
+        max-width: 1024px;
+        margin: 0px auto;
+    }
+
+ }
+ 
+ /* ===============================
+    Desktop Devices: 769px and wider
+    ===============================
+ */
+ 
+ @media only screen and (min-width: 769px) {
+    
+    body {
+       width: 100%;
+       max-width: 1058px;
+       margin: 0px auto;
+    }
+ }
