@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+
+/* HTML and Body Styles */
+html{
+    background-color: #3333FF;
+}
+
+body{
+margin: 0 auto;
+padding: 12;
+max-width: 1020px;
+min-width: 640px;
+color: #fffdf4;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    height:250px;
+    width:250px;
+}
+a{
+    color:#080808; 
+}
+a:hover{
+    color: #a76bcf;
+}
+
+/*Div Rules*/
+div[class^="col-"]
+{
+    float: left;
+}
+
+div.row{
+    clear: both;
+    text-align: center;
+}
+
+div.row::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+div.col-1-1 {width: 100%}
+div.col-1-2 {width: 50%}
+
+div{
+    outline: 1px solid white;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+  body {
+    width: fit-content;
+    font-size:300px;
+  }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+ 
+}
+
+tr{
+background: white;
+border: 10px outset black;
+width:100%;
+
+}
+
+th{
+    background-color: black;
+    border: 10px outset white;
+    width: 100%;
+}
